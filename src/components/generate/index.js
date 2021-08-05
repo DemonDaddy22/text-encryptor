@@ -1,18 +1,20 @@
-import { useState, useCallback, Fragment, useEffect } from 'react';
-import Input from '../input';
-import Select from '../select';
-import Button from '../button';
-import SnackBar from '../snackbar';
-import Loader from '../loader';
-import Error from '../error';
-import Description from '../description';
-import classes from './styles.module.css';
-import { isEmptyString, copyText } from '../../utils';
-import { SEVERITY, MESSAGE_API_URL, VALID_FOR_OPTIONS } from '../constants';
-import useAsyncExec from '../../hooks/useAsyncExec';
-import ClipBoardChecked from '../../assets/clipboardChecked';
+import {Fragment, useCallback, useEffect, useState} from 'react';
+
 import ClipBoard from '../../assets/clipboard';
+import ClipBoardChecked from '../../assets/clipboardChecked';
+import useAsyncExec from '../../hooks/useAsyncExec';
+import {copyText, isEmptyString} from '../../utils';
+import Button from '../button';
+import {MESSAGE_API_URL, SEVERITY, VALID_FOR_OPTIONS} from '../constants';
+import Description from '../description';
+import Error from '../error';
 import IconButton from '../iconButton';
+import Input from '../input';
+import Loader from '../loader';
+import Select from '../select';
+import SnackBar from '../snackbar';
+
+import classes from './styles.module.css';
 
 const Generate = () => {
     const [inputTextVal, setInputTextVal] = useState('');

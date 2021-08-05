@@ -1,6 +1,7 @@
+import {useCallback} from 'react';
+
+import {HOMEPAGE_PATH} from '../constants';
 import Error from '../error';
-import { useCallback } from 'react';
-import { HOMEPAGE_PATH } from '../constants';
 
 const ErrorPage = props => {
     const error = { message: 'Page Not Found!', status: '404' };

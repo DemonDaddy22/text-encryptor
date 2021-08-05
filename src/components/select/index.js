@@ -1,10 +1,12 @@
 import Downshift from 'downshift';
-import IconButton from '../iconButton';
+
 import ExpandIcon from '../../assets/expandIcon';
+import {isEmptyString} from '../../utils';
+import {themed} from '../../utils/theme';
+import {VALID_FOR_OPTIONS} from '../constants';
+import IconButton from '../iconButton';
+
 import classes from './styles.module.css';
-import { VALID_FOR_OPTIONS } from '../constants';
-import { themed } from '../../utils/theme';
-import { isEmptyString } from '../../utils';
 
 const Select = props => {
     const { validity, handleValidityChange, placeholder = '' } = props;

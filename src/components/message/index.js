@@ -1,15 +1,17 @@
-import classes from './styles.module.css';
-import { Fragment, useCallback, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import Button from '../button';
-import Input from '../input';
-import SnackBar from '../snackbar';
-import Loader from '../loader';
-import Error from '../error';
-import { isEmptyString } from '../../utils';
-import { HOMEPAGE_PATH, SEVERITY } from '../constants';
-import { MESSAGE_API_URL } from '../constants';
+import {Fragment, useCallback, useEffect, useState} from 'react';
+import {useParams} from 'react-router-dom';
+
 import useAsyncExec from '../../hooks/useAsyncExec';
+import {isEmptyString} from '../../utils';
+import Button from '../button';
+import {HOMEPAGE_PATH, SEVERITY} from '../constants';
+import {MESSAGE_API_URL} from '../constants';
+import Error from '../error';
+import Input from '../input';
+import Loader from '../loader';
+import SnackBar from '../snackbar';
+
+import classes from './styles.module.css';
 
 const Message = props => {
     const { id } = useParams();

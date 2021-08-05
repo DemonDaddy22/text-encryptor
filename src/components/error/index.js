@@ -1,5 +1,6 @@
-import classes from './styles.module.css';
 import Button from '../button';
+
+import classes from './styles.module.css';
 
 const Error = props => {
     const { error: { message, status }, buttonLabel, onClick } = props;

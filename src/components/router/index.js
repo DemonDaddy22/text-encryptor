@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from '../header';
-import Generate from '../generate';
-import Message from '../message';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 import ErrorPage from '../errorPage';
+import Generate from '../generate';
+import Header from '../header';
+import Message from '../message';
 
 const Routing = () => {
     return <Router>
